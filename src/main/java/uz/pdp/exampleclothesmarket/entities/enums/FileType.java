@@ -8,5 +8,7 @@ public enum FileType {
     BMP,
     PDF,
     DOC,
-    DOCX
+    DOCX,
+    XLS,
+    XLSX,
 }
