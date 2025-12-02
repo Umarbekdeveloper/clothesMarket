@@ -8,6 +8,7 @@ import java.util.List;
 @Entity
 public class Product {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     private String name;
@@ -20,6 +21,7 @@ public class Product {
 
     private String color;
 
+    @Enumerated(EnumType.STRING)
     private Size size;
 
     private boolean forMale;
